@@ -49,7 +49,9 @@ Note : The softpots are placed over the force sensitive resistors ( see picture 
 ### First time calibration
 * Uncomment Serial.begin(115200) and comment Serial.begin(31250);
 * Uncomment calibrate() at line 168
-* To calibrate the softpots, open a serial console. When it says "waiting" press on one of the softstick and press the middle button on the midi shield. Repeat for N_FRET times and repeat the same for the second softpot. When it's done the program will write the calibration in to the EEPROM and you may comment the line 168 and switch the serial to 31250 baud again. 
+* Programming the uC must be done without the MIDI shield.
+* Before the calibration you need to set the A0 knob all the way down.
+* To calibrate the softpots, open a serial console. When it says "waiting" press on one of the softstick and confirm pressing by turning the A0 knob all the way up. Repeat for N_FRET times and repeat the same for the second softpot. When it's done the program will write the calibration in to the EEPROM and you may comment the line 168 and switch the serial to 31250 baud again. 
 * The notes that are close to the Arduino are lower
 
 ## Manual
